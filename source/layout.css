@@ -2227,12 +2227,13 @@ height:180px;
 /*pagination*/
 
 .pagination {
-clear:both;
-padding: 10px 0px 50px 0;
-position:relative;
-z-index:3;
-line-height: 13px;
-overflow: hidden;
+    position: relative;
+    z-index: 3;
+    line-height: 13px;
+    overflow: hidden;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 220px;
 
 }
 
@@ -4298,4 +4299,36 @@ avia-menu-text{	color: eee!important;
   font-size: 18px;
   transform: translate(-50%);
   z-index: 999;
+}
+
+
+.dropcover{
+	display: none;
+	background-color: #fff;
+	position: absolute;
+	width: 100%;
+	z-index: 999;
+	padding: 5px 
+}
+
+.product:hover .dropcover{
+	display: block;
+}
+
+.dropcover_right,
+.dropcover_left{
+	display: inline-block;
+	overflow:hidden;
+	vertical-align: middle;
+	    width: 69%;
+}
+.dropcover_right{
+	    width: 29%;
+}
+.dropcover_right .button{
+	float:right;
+}
+
+.dropcover .button{
+	min-width:auto;
 }

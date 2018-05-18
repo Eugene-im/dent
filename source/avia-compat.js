@@ -48,3 +48,4 @@ document.documentElement.className += ' js_active ';
 		}
 	}
 })();
+
